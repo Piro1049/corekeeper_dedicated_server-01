@@ -17,10 +17,11 @@ $Script:LogFilePath = "$Script:CoreKeeperDedicatedServerSaveDataPath\SaveData.lo
 # 4:Valentine
 # 5:Anniversary
 # 6:Cherry blossom
-$Script:Season = 1
+# $Script:Season = 1
 
 # CoreKeeper arguments
-$Script:CoreKeeperArguments = @("-batchmode", "-logfile", "CoreKeeperServerLog.txt", "-season", "$Script:Season")
+# $Script:CoreKeeperArguments = @("-batchmode", "-logfile", "CoreKeeperServerLog.txt", "-season", "$Script:Season")
+$Script:CoreKeeperArguments = @("-batchmode", "-logfile", "CoreKeeperServerLog.txt")
 
 function Quit-CoreKeeperDedicatedServer {
     $Script:ckds_process = Get-Process -Name "CoreKeeperServer" -ErrorAction SilentlyContinue
